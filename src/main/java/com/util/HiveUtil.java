@@ -79,6 +79,7 @@ public class HiveUtil {
         Connection conn = JdbcUtilDev.getConn();
         Statement stat = JdbcUtilDev.getStmt(conn);
         stat.execute(sql);
+        System.out.println(sql);
         JdbcUtilDev.closeFunc(conn,stat);
     }
 

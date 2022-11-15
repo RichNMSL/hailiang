@@ -65,11 +65,11 @@ public class obstest {
                 result  = obsClient.listObjects(request);
                 for(ObsObject obsObject : result.getObjects()){
                         list.add(obsObject.getObjectKey());
-
                 }
                 listObjectsByPrefix(obsClient, request, result);
             }else{
                 break;
+
             }
 
         }
